@@ -1,12 +1,14 @@
+import React from 'react';
 import { Text, View, Switch } from 'react-native';
-import { estilo } from './estilos';
-import { useState, useContext } from 'react';
+import { estilos } from './estilos';
+import { useContext } from 'react';
 import { TemaContext } from '../../contexts/TemaContext';
 
 export default function Configuracao({ navigation }) {
-  const [estado, setEstado] = useState(true);
 
-  const { temaAtual, setTemaAtual } = useContext(TemaContext)
+  const { temaAtual, setTemaAtual, temaEscolhido } = useContext(TemaContext)
+
+  const estilo = estilos(temaEscolhido)  
 
   return (
     <View style={estilo.container}>

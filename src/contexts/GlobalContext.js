@@ -1,10 +1,9 @@
-import { createContext, useState } from 'react';
+import React from 'react';
+import { createContext } from 'react';
 
 export const GlobalContext = createContext({})
 
 export function InfoProvider({children}) {
-    const valor = 150;
-    const [nome, setNome] = useState("Bezalel")
 
     return (
         <GlobalContext.Provider value={{

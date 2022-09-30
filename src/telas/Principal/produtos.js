@@ -1,3 +1,4 @@
+import React from 'react';
 import imagemTenis from '../../imagens/tenis.jpeg';
 import imagemMesa from '../../imagens/mesa.png';
 import imagemCamisa from '../../imagens/camisa.jpeg';
